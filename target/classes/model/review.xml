@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.lawencon.bootcamptest.model">
+	<class name="Review" table="t_review" >
+		<id name="id" >
+			<generator class="increment"/>
+		</id>
+		
+		<many-to-one name="progressStatus" class="ProgressStatus" column="progress_status_id" />
+		<many-to-one name="acceptanceStatus" class="AcceptanceStatus" column="acceptance_status_id" />
+		<many-to-one name="candidate" class="User" column="candidate_id" not-null="true" />
+		<many-to-one name="reviewer" class="User" column="reviewer_id" not-null="true" />
+		
+		<property name="createdBy" column="created_by" not-null="true"/>
+		<property name="createdAt" column="created_at" not-null="true"/>
+		<property name="updatedBy" column="updated_by" />
+		<property name="updatedAt" column="updated_at" />
+		<property name="isActive" column="is_active" not-null="true"/>
+		<property name="versionNum" column="version_num" not-null="true"/>
+	</class>
+</hibernate-mapping>

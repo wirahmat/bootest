@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean 
+		id="userService" 
+		class="com.lawencon.bootcamptest.service.impl.UserServiceImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean
+		id="statusService"
+		class="com.lawencon.bootcamptest.service.impl.StatusServiceImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean
+		id="roleService"
+		class="com.lawencon.bootcamptest.service.impl.RoleServiceImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean
+		id="reviewService"
+		class="com.lawencon.bootcamptest.service.impl.ReviewServiceImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean 
+		id="questionPackageService"
+		class="com.lawencon.bootcamptest.service.impl.QuestionPackageServiceImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean 
+		id="questionTypeService"
+		class="com.lawencon.bootcamptest.service.impl.QuestionTypeServiceImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean 
+		id="questionTopicService"
+		class="com.lawencon.bootcamptest.service.impl.QuestionTopicServiceImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean
+		id="questionService"
+		class="com.lawencon.bootcamptest.service.impl.QuestionServiceImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean
+		id="questionAssignService"
+		class="com.lawencon.bootcamptest.service.impl.QuestionAssignServiceImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean
+		id="candidateAssignService"
+		class="com.lawencon.bootcamptest.service.impl.CandidateAssignServiceImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean
+		id="answerCandidateService"
+		class="com.lawencon.bootcamptest.service.impl.AnswerCandidateServiceImpl"
+		autowire="constructor">
+	</bean>
+</beans>

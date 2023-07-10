@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.lawencon.bootcamptest.model">
+	<class name="QuestionCandidate" table="t_question_candidate" >
+		<id name="id" >
+			<generator class="increment"/>
+		</id>
+		
+		<many-to-one name="candidate" class="User" column="candidate_id" not-null="true" />
+		<many-to-one name="question" class="Question" column="question_id" not-null="true" />
+		<many-to-one name="hr" class="User" column="hr_id" not-null="true" />
+		<many-to-one name="candidateAssign" class="CandidateAssign" column="candidate_assign_id" not-null="true" />
+		
+		<property name="createdBy" column="created_by" not-null="true"/>
+		<property name="createdAt" column="created_at" not-null="true"/>
+		<property name="updatedBy" column="updated_by" />
+		<property name="updatedAt" column="updated_at" />
+		<property name="isActive" column="is_active" not-null="true"/>
+		<property name="versionNum" column="version_num" not-null="true"/>
+	</class>
+</hibernate-mapping>

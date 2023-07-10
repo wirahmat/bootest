@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+		
+	<bean
+		id="userDao"
+		class="com.lawencon.bootcamptest.dao.impl.UserDaoImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean
+		id="roleDao"
+		class="com.lawencon.bootcamptest.dao.impl.RoleDaoImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean
+		id="reviewDao"
+		class="com.lawencon.bootcamptest.dao.impl.ReviewDaoImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean
+		id="reviewDetailDao"
+		class="com.lawencon.bootcamptest.dao.impl.ReviewDetailDaoImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean
+		id="questionPackageDao"
+		class="com.lawencon.bootcamptest.dao.impl.QuestionPackageDaoImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean
+		id="questionTopicDao"
+		class="com.lawencon.bootcamptest.dao.impl.QuestionTopicDaoImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean
+		id="questionTypeDao"
+		class="com.lawencon.bootcamptest.dao.impl.QuestionTypeDaoImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean
+		id="questionOptionDao"
+		class="com.lawencon.bootcamptest.dao.impl.QuestionOptionDaoImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean
+		id="questionDao"
+		class="com.lawencon.bootcamptest.dao.impl.QuestionDaoImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean
+		id="questionCandidateDao"
+		class="com.lawencon.bootcamptest.dao.impl.QuestionCandidateDaoImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean
+		id="progressStatusDao"
+		class="com.lawencon.bootcamptest.dao.impl.ProgressStatusDaoImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean
+		id="profileDao"
+		class="com.lawencon.bootcamptest.dao.impl.ProfileDaoImpl"
+		autowire="constructor">
+	</bean>
+		
+	<bean
+		id="fileTypeDao"
+		class="com.lawencon.bootcamptest.dao.impl.FileTypeDaoImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean
+		id="fileDao"
+		class="com.lawencon.bootcamptest.dao.impl.FileDaoImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean
+		id="candidateFileDao"
+		class="com.lawencon.bootcamptest.dao.impl.CandidateFileDaoImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean
+		id="candidateAssignDao"
+		class="com.lawencon.bootcamptest.dao.impl.CandidateAssignDaoImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean
+		id="answerCandidateDao"
+		class="com.lawencon.bootcamptest.dao.impl.AnswerCandidateDaoImpl"
+		autowire="constructor">
+	</bean>
+	
+	<bean
+		id="acceptanceStatusDao"
+		class="com.lawencon.bootcamptest.dao.impl.AcceptanceStatusDaoImpl"
+		autowire="constructor">
+	</bean>
+	
+</beans>

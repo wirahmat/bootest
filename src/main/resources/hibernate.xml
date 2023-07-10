@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+		
+	<bean id="sessionFactory"
+        class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQL82Dialect</prop>
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.format_sql">true</prop>
+            </props>
+        </property>
+
+        <property name="mappingResources">
+            <list>
+            	<value>
+            		/model/acceptancestatus.xml
+            	</value>
+            	<value>
+            		/model/answercandidate.xml
+            	</value>
+            	<value>
+            		/model/candidateassign.xml
+            	</value>
+            	<value>
+            		/model/candidatefile.xml
+            	</value>
+            	<value>
+            		/model/filetype.xml
+            	</value>
+            	<value>
+            		/model/file.xml
+            	</value>
+            	<value>
+            		/model/profile.xml
+            	</value>
+            	<value>
+            		/model/progressstatus.xml
+            	</value>
+            	<value>
+            		/model/question.xml
+            	</value>
+            	<value>
+            		/model/questioncandidate.xml
+            	</value>
+            	<value>
+            		/model/questionoption.xml
+            	</value>
+            	<value>
+            		/model/questionpackage.xml
+            	</value>
+            	<value>
+            		/model/questiontopic.xml
+            	</value>
+            	<value>
+            		/model/questiontype.xml
+            	</value>
+            	<value>
+            		/model/review.xml
+            	</value>
+            	<value>
+            		/model/reviewdetail.xml
+            	</value>
+            	<value>
+            		/model/role.xml
+            	</value>
+            	<value>
+            		/model/user.xml
+            	</value>
+            </list>
+        </property>
+    </bean>
+	
+</beans>
